@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository contains a complete implementation and comprehensive documentation of Bayesian Neural Networks (BNNs) for quantum error correction (QEC) decoding. The work demonstrates how uncertainty quantification in deep learning can address critical challenges in fault-tolerant quantum computing.
+This repository contains an implementation and documentation of Bayesian Neural Networks (BNNs) for quantum error correction (QEC) decoding. The work demonstrates how uncertainty quantification in deep learning can address critical challenges in fault-tolerant quantum computing.
+
+![BNN4QEC](./img/BNN-for-QEC.png)
 
 ## Deliverables
 
@@ -82,10 +84,12 @@ result = decoder.decode_with_confidence(syndrome)
 print(f"Confidence: {result['confidence']:.2%}")
 print(f"Needs verification: {result['needs_verification']}")
 ```
+#### 📖 Interactive Demo Notebook
+**[`bnn_qec_demo.ipynb`](./notebooks/bnn_qec_demo.ipynb)** (53 KB) - A comprehensive Jupyter notebook that provides hands-on exploration of Bayesian Neural Networks for QEC. Features 9 interactive sections covering everything from building BNN layers from scratch to implementing adaptive decoding strategies. Includes live visualizations of uncertainty quantification, comparison with classical decoders, and step-by-step walkthroughs of training and inference. Perfect for learning the concepts interactively or demonstrating BNN decoders in presentations.
 
 ### 2. Documentation
 
-#### `bnn_qec_overview.md` - Comprehensive Technical Document
+#### [`bnn_qec_overview.md`](./docs/bnn_qec_overview.md) - Comprehensive Technical Document
 A 50+ page technical overview covering:
 
 **Section Highlights**:
@@ -107,7 +111,7 @@ A 50+ page technical overview covering:
 - Neural BP (Nachmani et al., 2019) - PRL
 - GraphQEC (2025) - Universal framework
 
-#### `bnn_qec_quick_reference.md` - Practical Quick Guide
+#### [`bnn_qec_quick_reference.md`](./docs/bnn_qec_quick_reference.md) - Practical Quick Guide
 A condensed, actionable reference featuring:
 - Core value proposition summary
 - 5 key advantages with concrete examples
@@ -123,6 +127,11 @@ Perfect for:
 - Team presentations
 - Implementation planning
 - Onboarding new researchers
+
+### Additional Resources
+**[`what_is_qec_decoder.md`](./docs/what_is_qec_decoder.md)** - A comprehensive primer explaining what QEC decoders are, how they work, and why they matter. Perfect for newcomers to quantum error correction or those wanting to understand the problem before diving into the BNN solution. Includes analogies, visual examples, and comparisons of different decoder types.
+
+**[`BNN-QEC-PRIMARY-SOURCES.md`](./docs/BNN-QEC-PRIMARY-SOURCES.md)** - Documents the primary sources and influences for this implementation. Clarifies that the code is based on standard Bayesian deep learning literature (Blundell et al., Gal & Ghahramani) applied to QEC, with conceptual framework from recent papers (QuBA, AlphaQubit, Torlai & Melko), rather than being derived from any specific QEC repository.
 
 ## Key Concepts Explained
 
